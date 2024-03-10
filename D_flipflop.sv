@@ -6,9 +6,9 @@ module d_flipflop(
   output reg q,
   output reg qb
 );
-
+ 
   always @(posedge clk or posedge rst) begin
-    if (rst) begin
+    if (rst) begin    // set  the outputs equal to zero if reset if high
       q <= 0;
       qb <= 0;
     end
